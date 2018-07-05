@@ -70,6 +70,11 @@
         </section>
 
         <section>
+            <h2>Django can be tricky at first</h2>
+            It has a lot of steps even to create a simple Hello World app.
+        </section>
+
+        <section>
             <h2>Django vs Flask</h2>
             Django is a more batteries included approach.
         </section>
@@ -81,6 +86,114 @@
                 <li>V - Templates</li>
                 <li>C - Views</li>
             </ul>
+        </section>
+
+        <section>
+            <h2>Virtual Environments</h2>
+            <img src="https://media.giphy.com/media/8v4UgiBguYMRG/giphy.gif" alt="fresh start">
+        </section>
+
+        <section>
+            <h2>How to Start</h2>
+            <code>django-admin startproject mb_project</code>
+        </section>
+
+        <section>
+            <h2>Start App</h2>
+            <code>python manage.py startapp posts</code>
+        </section>
+
+        <section>
+            <h2>Project vs App</h2>
+            A project is the entire application. A app is a submodule of the project. The project contains apps. The demo project we will be looking at only contains one app.
+        </section>
+
+        <section>
+            <h2>To run your server locally</h2>
+            <code>python manage.py runserver</code>
+        </section>
+
+        <section>
+            <h2>You will see this first time you run locally</h2>
+            <img src="http://res.cloudinary.com/dkibchpur/image/upload/c_scale,w_380/v1530811981/Screen_Shot_2018-07-05_at_9.59.29_AM.png" alt="it worked!">
+        </section>
+
+        <section>
+            <h2>Demo Site</h2>
+            For this talk we will be looking at code that builds a very simple site which allows you to post messages.
+        </section>
+
+        <section>
+            <h2>Models</h2>
+            Define the structure of your database.
+        </section>
+
+        <section>
+            <h2>Two Step Migration</h2>
+            <code>python manage.py makemigrations posts</code>
+            <code>python manage.py migrate posts</code>
+        </section>
+
+        <section>
+            <h2>Creating a Superuser</h2>
+            <code>python manage.py createsuperuser</code>
+        </section>
+
+        <section>
+            <h2>For Your Models to Show in the Django Admin</h2>
+            You will need to update the <code>posts/admin.py</code> file
+        </section>
+
+        <section>
+            <h2>Templates</h2>
+            Templates allow us to create the look and the feel of the site.
+        </section>
+
+        <section>
+            <h2>Views</h2>
+            This handles the logic of the site and allows to define what goes where and to what template.
+        </section>
+
+        <section>
+            <h2>Urls</h2>
+            Handles the routing of the urls.
+        </section>
+
+        <section>
+            <h2>Why Do We Have 2 urls.py Files</h2>
+            <p>1. The project-level urls.py file where we simply include our posts and add include on the second line</p>
+            <p>2. The app level one where can set up the individual pages.</p>
+        </section>
+
+        <section>
+            <h2>Testing our Pages</h2>
+            All code that doesn't have tests is broken, let's take a look at ours.
+        </section>
+
+        <section>
+            <h2>Concepts to Brush Up On</h2>
+            <ul>
+                <li>How the Internet Works</li>
+                <li>Forms in HTML</li>
+                <li>Python Classes</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Recommend Resources</h2>
+            <ul>
+                <li>The Polls Tutorial</li>
+                <li>Django for Beginners</li>
+                <li>Django Girls Tutorial</li>
+                <li>Hello Web App</li>
+                <li>Two Scoops of Django</li>
+                <li>Test-Driven-Development with Python</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Go On and Create Awesome Django Sites</h2>
+            <img src="https://media.giphy.com/media/6DUdvgpZurqwM/giphy.gif" alt="woo!">
         </section>
 
     </div>
